@@ -474,37 +474,37 @@ module HTTParty
     end
 
     # Perform a PATCH request to a path
-    def patch(path, options={}, &block)
+    def http_patch(path, options={}, &block)
       perform_request Net::HTTP::Patch, path, options, &block
     end
 
     # Perform a PUT request to a path
-    def put(path, options={}, &block)
+    def http_put(path, options={}, &block)
       perform_request Net::HTTP::Put, path, options, &block
     end
 
     # Perform a DELETE request to a path
-    def delete(path, options={}, &block)
+    def http_delete(path, options={}, &block)
       perform_request Net::HTTP::Delete, path, options, &block
     end
 
     # Perform a MOVE request to a path
-    def move(path, options={}, &block)
+    def http_move(path, options={}, &block)
       perform_request Net::HTTP::Move, path, options, &block
     end
 
     # Perform a COPY request to a path
-    def copy(path, options={}, &block)
+    def http_copy(path, options={}, &block)
       perform_request Net::HTTP::Copy, path, options, &block
     end
 
     # Perform a HEAD request to a path
-    def head(path, options={}, &block)
+    def http_head(path, options={}, &block)
       perform_request Net::HTTP::Head, path, options, &block
     end
 
     # Perform an OPTIONS request to a path
-    def options(path, options={}, &block)
+    def http_options(path, options={}, &block)
       perform_request Net::HTTP::Options, path, options, &block
     end
 
